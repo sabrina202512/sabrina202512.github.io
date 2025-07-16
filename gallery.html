@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+header {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+
+main {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+main section {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+main section img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+main section img:hover {
+  transform: scale(1.05);
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #007acc;
+  color: white;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tfoot {
+  background-color: #eee;
+  font-style: italic;
+}
+
+
+main ul li {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+main ul li a {
+  color: #007acc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+main ul li a:hover {
+  color: #004466;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  main {
+    padding: 20px 10px;
+  }
+
+  main section img {
+    width: 100%;
+    max-width:300px;
+}
+}
+
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Sabrina's Hotel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ 
+  <header>
+    <h1>Our Beautiful Rooms</h1>
+  </header>
+
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="help.html">Help</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+ 
+  <main>
+ 
+    <section>
+      <h2>Explore Our Hotel</h2>
+      <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+        <img src="single room.jpg" alt="Single Room" width="250">
+        <img src="double room.jpg" alt="Double Room" width="250">
+        <img src="Hotel lobby.jpg" alt="Hotel Lobby" width="250">
+      </div>
+    </section>
+
+    
+    <section>
+      <h2>Room Types & Prices</h2>
+      <table border="1" style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Room Type</th>
+            <th>Price (per night)</th>
+            <th>Capacity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Single Room</td>
+            <td>$25</td>
+            <td>1 Person</td>
+          </tr>
+          <tr>
+            <td>Double Room</td>
+            <td>$35</td>
+            <td>2 Persons</td>
+          </tr>
+          <tr>
+            <td>Family Room</td>
+            <td>$50</td>
+            <td>4 Persons</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">All rooms include free Wi-Fi and breakfast.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    
+    <section>
+      <h3>More Information</h3>
+      <ul>
+        <li><a href="https://www.booking.com" target="_blank">Visit Booking.com</a></li>
+        <li><a href="index.html">Back to Home</a></li>
+      </ul>
+    </section>
+  </main>
+
+
+  <footer>
+     <p>&copy; 2025 Sabrina's Hotel | Designed by Sabrina Hussein</p>
+  </footer>
+
+</body>
+</html>
